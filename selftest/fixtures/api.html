@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style></style></head>
+<body>
+<p id="out">waiting</p><script>fetch("/api/data").then(r=>r.json()).then(d=>{document.getElementById("out").textContent=d.label})</script>
+</body></html>

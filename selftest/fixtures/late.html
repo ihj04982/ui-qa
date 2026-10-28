@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>.small{height:40px;min-width:64px}</style></head>
+<body>
+<div id="busy" aria-busy="true">Loading</div><script>setTimeout(()=>{document.getElementById("busy").remove();const b=document.createElement("button");b.className="small";b.textContent="Late";document.body.appendChild(b)},600)</script>
+</body></html>

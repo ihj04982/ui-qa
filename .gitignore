@@ -1,0 +1,8 @@
+node_modules/
+dist/
+qa-out/
+test-results/
+qa-planted/
+trial/har/
+qa-ts*/
+trial/

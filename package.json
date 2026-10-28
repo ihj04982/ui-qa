@@ -1,0 +1,31 @@
+{
+  "name": "ui-qa",
+  "version": "0.1.0",
+  "private": true,
+  "description": "실브라우저에서 화면을 재어 넘침·잘림·터치 크기·글꼴·토큰 이탈을 규칙으로 판정한다",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "ui-qa": "./src/cli.ts"
+  },
+  "scripts": {
+    "selftest": "playwright test",
+    "tsc": "tsc --noEmit",
+    "ui-qa": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.50"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
